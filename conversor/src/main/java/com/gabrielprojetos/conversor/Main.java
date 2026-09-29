@@ -50,6 +50,7 @@ public class Main {
 
                             System.out.println();
                             System.out.println("O valor " + n1 + " en polegadas é:" + (n1 * 2.54));
+                            menu.menuComprimento();
 
     							break;
 
@@ -64,6 +65,7 @@ public class Main {
 
                             System.out.println();
                             System.out.println("O valor " + n1 + " en polegadas é:" + (n1 / 2.54));
+                            menu.menuComprimento();
 
 							break;
 
@@ -78,7 +80,8 @@ public class Main {
 
                             System.out.println();
                             System.out.println("O valor " + n1 + " en polegadas é:" + (n1 / 0.621371));
-							break;
+                            menu.menuComprimento();							
+                            break;
 
                         	} case 4: {
 
@@ -91,6 +94,7 @@ public class Main {
 
                             System.out.println();
                             System.out.println("O valor " + n1 + " en polegadas é:" + (n1 * 0.621371));
+                            menu.menuComprimento();                            
 							break;
 
                         	} case 5: {
