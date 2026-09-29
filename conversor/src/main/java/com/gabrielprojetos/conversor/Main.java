@@ -4,25 +4,13 @@ import java.util.Scanner;
 
 public class Main {
 
-    public class MensagemComprimento {
-        public void mensagem() {
-                System.out.println("");
-                System.out.println("Qual das operações deseja realizar?");
-                System.out.println("1 - Centimetros para Polegadas");
-                System.out.println("2 - Polegadas para Centimetros");
-                System.out.println("3 - Kilômetros para Milhas");
-                System.out.println("4 - Milhas para Kilômetros");
-                System.out.println("5 - Sair");
-        }
-    }
-
     public static void main(String[] args) {
 
         System.out.println("");
         System.out.println("");
         System.out.println("seja bem vindo ao conversor.");
 
-        MensagemComprimento mensagem = new Main().new MensagemComprimento();
+        Menu menu = new Menu(); //para chamar os menus dentro do arquivo menu.java
         int choice;
         int choiceIn;
 
@@ -44,7 +32,7 @@ public class Main {
 				switch (choice) {
 				
                 case 1: 
-                            mensagem.mensagem();
+                        menu.menuComprimento();
 
                     do {
 
@@ -62,7 +50,7 @@ public class Main {
 
                             System.out.println();
                             System.out.println("O valor " + n1 + " en polegadas é:" + (n1 * 2.54));
-                            mensagem.mensagem();
+
     							break;
 
 							} case 2: {
@@ -76,7 +64,7 @@ public class Main {
 
                             System.out.println();
                             System.out.println("O valor " + n1 + " en polegadas é:" + (n1 / 2.54));
-                            mensagem.mensagem();
+
 							break;
 
                        		} case 3: {
