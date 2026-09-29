@@ -26,18 +26,21 @@ public class Menu {
         System.out.println("Qual das operações deseja realizar?");
         System.out.println("1 - Celcius para Farenhaitz");
         System.out.println("2 - Farenhaitz para Celcius");
+        System.out.println("3 - Sair");
     }
 
     public void menuTempo() {
         System.out.println("Qual das operações deseja realizar?");
         System.out.println("1 - Minutos para Horas");
         System.out.println("2 - Horas para Minutos");
+        System.out.println("3 - Sair");
     }
 
     public void menuMassa() {
         System.out.println("Qual das operações deseja realizar?");
         System.out.println("1 - Kilos para Libras");
         System.out.println("2 - Libras para Kilos");
+        System.out.println("3 - Sair");
     }
 
 

@@ -17,14 +17,11 @@ public class Main {
         try (Scanner scanner = new Scanner(System.in)) {
 
             do {
-                System.out.println("Digite o número da operação.");
-                System.out.println("");
-                System.out.println("1 - Comprimento");
-                System.out.println("2 - Massa");
-                System.out.println("3 - Temperatura");
-                System.out.println("4 - Tempo");
-                System.out.println("5 - Sair");
-                System.out.println("");
+
+                
+
+                menu.menuPrincipal();
+
 
                 choice = scanner.nextInt();
                 scanner.nextLine();
@@ -94,7 +91,7 @@ public class Main {
 
                             System.out.println();
                             System.out.println("O valor " + n1 + " en polegadas é:" + (n1 * 0.621371));
-                            menu.menuComprimento();                            
+                            menu.menuComprimento();
 							break;
 
                         	} case 5: {
@@ -109,12 +106,34 @@ public class Main {
 
 				
                 case 2:
-                    System.out.println("Qual das operações deseja realizar?");
-                    System.out.println("1 - Kilos para Libras");
-                    System.out.println("2 - Libras para Kilos");
-                    choiceIn = scanner.nextInt();
-                    scanner.nextLine();
+                    menu.menuMassa();
 
+                    do {
+                        choiceIn = scanner.nextInt();
+                        scanner.nextLine();
+						
+                        switch (choiceIn) {
+                            case 1: {
+
+
+                                
+                                break;
+
+                            } case 2: {
+
+
+                                
+                                break;
+
+                            } case 3: {
+                               
+                                break;
+
+                            } default: {
+                                System.out.println("Digite um número válido");
+                        	}
+                        }
+                    } while (choiceIn != 3)
 					break;
 
                 case 3:
