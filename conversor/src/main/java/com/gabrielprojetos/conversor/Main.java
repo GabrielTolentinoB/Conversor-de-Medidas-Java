@@ -18,149 +18,193 @@ public class Main {
 
             do {
 
-                
-
                 menu.menuPrincipal();
-
 
                 choice = scanner.nextInt();
                 scanner.nextLine();
 
-				switch (choice) {
-				
-                case 1: 
+                switch (choice) {
+
+                    case 1:
                         menu.menuComprimento();
 
-                    do {
+                        do {
 
-                        choiceIn = scanner.nextInt();
-                        scanner.nextLine();
-						switch (choiceIn) {
+                            choiceIn = scanner.nextInt();
+                            scanner.nextLine();
+                            switch (choiceIn) {
 
-						    case 1: {
-                            System.out.println("");
-                            System.out.println("Opção 1 Selecionada");
+                                case 1: {
+                                    System.out.println("");
+                                    System.out.println("Opção 1 Selecionada");
 
-                            System.out.println("Digite o valor dos centímetros");
-                            float n1 = scanner.nextFloat();
+                                    System.out.println("Digite o valor dos centímetros");
+                                    float n1 = scanner.nextFloat();
+                                    scanner.nextLine();
+
+                                    System.out.println();
+                                    System.out.println("O valor " + n1 + " en polegadas é:" + (n1 * 2.54));
+                                    menu.menuComprimento();
+
+                                    break;
+
+                                }
+                                case 2: {
+
+                                    System.out.println("");
+                                    System.out.println("Opção 2 Selecionada");
+
+                                    System.out.println("Digite o valor das polegadas");
+                                    float n1 = scanner.nextFloat();
+                                    scanner.nextLine();
+
+                                    System.out.println();
+                                    System.out.println("O valor " + n1 + " en polegadas é:" + (n1 / 2.54));
+                                    menu.menuComprimento();
+
+                                    break;
+
+                                }
+                                case 3: {
+
+                                    System.out.println("");
+                                    System.out.println("Opção 3 Selecionada");
+
+                                    System.out.println("Digite o valor dos kilômetros");
+                                    float n1 = scanner.nextFloat();
+                                    scanner.nextLine();
+
+                                    System.out.println();
+                                    System.out.println("O valor " + n1 + " en polegadas é:" + (n1 / 0.621371));
+                                    menu.menuComprimento();
+                                    break;
+
+                                }
+                                case 4: {
+
+                                    System.out.println("");
+                                    System.out.println("Opção 4 Selecionada");
+
+                                    System.out.println("Digite o valor das milhas");
+                                    float n1 = scanner.nextFloat();
+                                    scanner.nextLine();
+
+                                    System.out.println();
+                                    System.out.println("O valor " + n1 + " en polegadas é:" + (n1 * 0.621371));
+                                    menu.menuComprimento();
+                                    break;
+
+                                }
+                                case 5: {
+                                    break;
+                                }
+                                default: {
+                                    System.out.println("Digite um número válido");
+                                }
+                            }
+
+                        } while (choiceIn != 5);
+                        break;
+
+                    case 2:
+                        menu.menuMassa();
+
+                        do {
+                            choiceIn = scanner.nextInt();
                             scanner.nextLine();
 
-                            System.out.println();
-                            System.out.println("O valor " + n1 + " en polegadas é:" + (n1 * 2.54));
-                            menu.menuComprimento();
+                            switch (choiceIn) {
+                                case 1: {
+                                    System.out.println("");
+                                    System.out.println("Opção 1 Selecionada");
 
-    							break;
+                                    break;
 
-							} case 2: {
+                                }
+                                case 2: {
 
-                            System.out.println("");
-                            System.out.println("Opção 2 Selecionada");
+                                    break;
 
-                            System.out.println("Digite o valor das polegadas");
-                            float n1 = scanner.nextFloat();
+                                }
+                                case 3: {
+
+                                    break;
+
+                                }
+                                default: {
+                                    System.out.println("Digite um número válido");
+                                }
+                            }
+                        } while (choiceIn != 3);
+                        break;
+
+                    case 3:
+                        menu.menuTemperatura();
+
+                        do {
+                            choiceIn = scanner.nextInt();
                             scanner.nextLine();
 
-                            System.out.println();
-                            System.out.println("O valor " + n1 + " en polegadas é:" + (n1 / 2.54));
-                            menu.menuComprimento();
+                            switch (choiceIn) {
+                                case 1: {
 
-							break;
+                                    break;
 
-                       		} case 3: {
+                                }
+                                case 2: {
 
-                            System.out.println("");
-                            System.out.println("Opção 3 Selecionada");
+                                    break;
 
-                            System.out.println("Digite o valor dos kilômetros");
-                            float n1 = scanner.nextFloat();
+                                }
+                                case 3: {
+
+                                    break;
+
+                                }
+                                default: {
+                                    System.out.println("Digite um número válido");
+                                }
+                            }
+                        } while (choiceIn != 3);
+                        break;
+
+                    case 4:
+                        menu.menuTempo();
+
+                        do {
+                            choiceIn = scanner.nextInt();
                             scanner.nextLine();
 
-                            System.out.println();
-                            System.out.println("O valor " + n1 + " en polegadas é:" + (n1 / 0.621371));
-                            menu.menuComprimento();							
-                            break;
+                            switch (choiceIn) {
+                                case 1: {
 
-                        	} case 4: {
+                                    break;
 
-                            System.out.println("");
-                            System.out.println("Opção 4 Selecionada");
+                                }
+                                case 2: {
 
-                            System.out.println("Digite o valor das milhas");
-                            float n1 = scanner.nextFloat();
-                            scanner.nextLine();
+                                    break;
 
-                            System.out.println();
-                            System.out.println("O valor " + n1 + " en polegadas é:" + (n1 * 0.621371));
-                            menu.menuComprimento();
-							break;
+                                }
+                                case 3: {
 
-                        	} case 5: {
-                            break;
-                        	} default: {
-                            System.out.println("Digite um número válido");
-                        	}
-						}	
+                                    break;
 
-                    } while (choiceIn != 5);
-                    break;
+                                }
+                                default: {
+                                    System.out.println("Digite um número válido");
+                                }
+                            }
+                        } while (choiceIn != 3);
+                        break;
 
-				
-                case 2:
-                    menu.menuMassa();
-
-                    do {
-                        choiceIn = scanner.nextInt();
-                        scanner.nextLine();
-						
-                        switch (choiceIn) {
-                            case 1: {
-
-
-                                
-                                break;
-
-                            } case 2: {
-
-
-                                
-                                break;
-
-                            } case 3: {
-                               
-                                break;
-
-                            } default: {
-                                System.out.println("Digite um número válido");
-                        	}
-                        }
-                    } while (choiceIn != 3)
-					break;
-
-                case 3:
-                    System.out.println("Qual das operações deseja realizar?");
-                    System.out.println("1 - Celcius para Farenhaitz");
-                    System.out.println("2 - Farenhaitz para Celcius");
-                    choiceIn = scanner.nextInt();
-                    scanner.nextLine();
-
-					break;
-
-                case 4:
-                    System.out.println("Qual das operações deseja realizar?");
-                    System.out.println("1 - Minutos para Horas");
-                    System.out.println("2 - Horas para Minutos");
-                    choiceIn = scanner.nextInt();
-                    scanner.nextLine();
-
-					break;
-
-                case 5:
-                    break;
-                default:
-                    System.out.println("Digite um número válido");
+                    case 5:
+                        break;
+                    default:
+                        System.out.println("Digite um número válido");
                 }
 
             } while (choice != 5);
-		}
-	}
+        }
+    }
 }
